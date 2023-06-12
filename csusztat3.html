@@ -73,6 +73,7 @@
 				<button type="button" class="btn rounded-pill btn-primary m-1 " onclick="numonFn()">Számok megjelenítése</button><br>
 				<button type="button" class="btn rounded-pill btn-primary m-1" onclick="numoffFn()">Számok elrejtése</button><br>
 				<div id="clock">00:00</div>
+				<div id="fin"></div>
 			</div>
 			<div class="col-lg-8">
 				<table id="maintable">
@@ -148,6 +149,7 @@
 			if (finishedFn()) {
 				pos[sizeX * sizeY] = sizeX * sizeY;
 				clearInterval(myVar);
+				document.getElementById("fin").innerHTML="Gratulálok, elkészültél!";
 			}
 			for (var j = 1; j <= sizeY; j++) {
 				for (var i = 1; i <= sizeX; i++) {
